@@ -1,0 +1,121 @@
+body{
+    height: fit-content;
+    margin: 0   ;
+    background-color: rgb(238, 238, 238);
+}
+.mega-container{
+    
+    margin: auto;
+    width: 90%;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 3%;
+    gap: 1%;
+}
+.shirt-cont{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgb(55, 25, 255);
+    border-radius: 5px;
+    
+}
+.info{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    
+}
+button{
+    width: 30%;
+    border-radius: 5px;
+    border-style: solid;
+    transition: background-color 0.5s linear, color 0.5s linear;
+    color: rgb(55, 25, 255);
+    background-color: #0015ff20;
+    border-color: rgb(55, 25, 255);
+    border-radius: 20%;
+}
+button:hover{
+    background-color: rgb(83, 45, 255);
+    color: #F0F0F0;
+}
+.name{
+    font-size: large;
+    font-weight: bold;
+}
+.window{
+    width: 50%;
+    height: fit-content;
+    border-radius: 5px;
+    font-weight: 400; 
+    text-align: center;
+    padding: 0;
+    border: 0;
+    display: block;
+    transform: scale(0.2);
+    opacity: 0;
+    transition: all 0.2s linear;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.window-area{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    padding: 2%;
+    gap: 0.5em;
+}
+.pictures-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    gap: 2%;
+}
+.photoes-area img{
+    width: 49%;
+    height: auto;
+    border-radius: 5px;
+}
+.text{
+    font-size: 16pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+.name{
+    font-weight: bold;
+}
+.window[open]{
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+.window::backdrop{
+    background-color: rgba(0, 0, 0, 0.727);
+}
+.pictures-dialog{
+    width: 50%;
+    height: auto;
+}

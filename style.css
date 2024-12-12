@@ -1,0 +1,17 @@
+.article{
+    font-size: 24pt;
+    color:rgb(246, 246, 246);
+    
+}
+.articles{
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+body{
+    background-color: rgb(58, 58, 58);
+}
